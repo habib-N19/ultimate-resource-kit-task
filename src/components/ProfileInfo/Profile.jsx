@@ -21,16 +21,16 @@ const Profile = () => {
     }
   ]
   return (
-    <section className='p-3 space-y-5 border'>
+    <section className='p-3 space-y-5 '>
       {/* profile image  */}
       <div className='flex items-center gap-3 mx-auto'>
-        <div className='p-4 mx-auto border avatar'>
+        <div className='p-4 mx-auto avatar'>
           <div className='w-20 rounded-full'>
             <img src={user} />
           </div>
         </div>
         <div>
-          <h1 className='text-3xl text-black'>Hi Mike,</h1>
+          <h1 className='text-3xl text-black'>Hi Mike</h1>
           <p>Welcome Back.</p>
         </div>
       </div>

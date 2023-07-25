@@ -6,7 +6,7 @@ import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div className='p-3 w-screen h-screen md:bg-[#efeff1]'>
+    <div className='p-3 max-w-screen md:bg-[#efeff1]'>
       <App />
     </div>
   </React.StrictMode>

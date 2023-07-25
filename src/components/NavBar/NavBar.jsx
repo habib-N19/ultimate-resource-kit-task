@@ -6,17 +6,23 @@ import { TbLogout } from 'react-icons/tb'
 
 const NavBar = () => {
   return (
-    <nav className='flex flex-col w-16 h-full space-y-10 text-2xl '>
-      <div className='w-full pl-0'>
-        <img src={logo} alt='' />
+    <nav className='flex flex-row order-last space-y-10 text-2xl md:justify-between md:w-16 md:h-screen md:flex-col md:order-first '>
+      <div className='flex flex-col justify-between'>
+        <div className='mb-8'>
+          <div className='hidden w-full pl-0 md:block'>
+            <img src={logo} alt='' />
+          </div>
+          <FaSearch className='order-last mx-auto' />
+        </div>
+        <FiHome className='mx-auto'></FiHome>
+        <FaRegNewspaper className='mx-auto' />
+        <BsCardList className='mx-auto' />
+        <FaRegUser className='mx-auto' />
       </div>
-      <FaSearch className='mx-auto' />
-      <FiHome className='mx-auto'></FiHome>
-      <FaRegNewspaper className='mx-auto' />
-      <BsCardList className='mx-auto' />
-      <FaRegUser className='mx-auto' />
-      <FaRegBell className='mx-auto' />
-      <TbLogout className='mx-auto' />
+      <div className='justify-end space-y-2'>
+        <FaRegBell className='mx-auto' />
+        <TbLogout className='mx-auto' />
+      </div>
     </nav>
   )
 }
